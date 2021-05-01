@@ -5,12 +5,6 @@
 #include <ctime>
 #include <iostream>
 
-//enum Rools
-//{
-//    rool1, // 2-3 живых соседа живём, иначе умераем. 3 живых соседа - размножаемся
-//    rool2
-//};
-
 struct iView
 {
     int N, M;
@@ -86,6 +80,16 @@ struct Game2d : iGame
     {
         alloc();
         view.setField(field);
+    }
+    ~Game2d()
+    {
+        for (int i = 0; i < N; i++)
+        {
+            delete[] field[i];
+            delete[] field_next[i];
+        }
+        delete[] field;
+        delete[] field_next;
     }
 
     void runGame(int numIt) override
@@ -163,7 +167,21 @@ struct Game3d : iGame
         alloc();
         view.setField(field);
     }
-
+    ~Game3d()
+    {
+        for (int i = 0; i < H; i++)
+        {
+            for (int j = 0; j < N; j++)
+            {
+                delete[] field[i][j];
+                delete[] field_next[i][j];
+            }
+            delete[] field[i];
+            delete[] field_next[i];
+        }
+        delete[] field;
+        delete[] field_next;
+    }
     void runGame(int numIt) override
     {
         for (int i = 0; i < numIt; i++)
