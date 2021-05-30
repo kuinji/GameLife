@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\Users\kuinji\Desktop\GameLife\GameLife\NewGameLife\NewGameLife\Source.cpp(47,26): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\kuinji\Desktop\GameLife\GameLife\NewGameLife\NewGameLife\Source.cpp(369,22): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+C:\Users\kuinji\Desktop\GameLife\GameLife\NewGameLife\NewGameLife\Source.cpp(369,26): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+  Создание кода
+  2 of 380 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  NewGameLife.vcxproj -> C:\Users\kuinji\Desktop\GameLife\GameLife\NewGameLife\Release\NewGameLife.exe
